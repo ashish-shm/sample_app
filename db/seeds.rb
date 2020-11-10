@@ -8,11 +8,14 @@
 
 # Create a main sample user.
 
-User.create!(name: "Example User",
-    email: "example@railstutorial.org",
+User.create!(name: "Test User",
+    email: "test@test.com",
     password:
-    "foobar",
-    password_confirmation: "foobar")
+    "test123",
+    password_confirmation: "test123",
+    admin: true,
+    activated: true,
+    activated_at: Time.zone.now)
    
    
     # Generate a bunch of additional users.
@@ -25,5 +28,7 @@ User.create!(name: "Example User",
     email: email,
     password:
     password,
-    password_confirmation: password)
+    password_confirmation: password,
+    activated: true,
+    activated_at: Time.zone.now)
     end
