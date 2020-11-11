@@ -30,4 +30,10 @@ class UsersIndexTest < ActionDispatch::IntegrationTest
     get users_path
     assert_select 'a', text: 'delete', count: 0
   end
+
+  # test "check redirect to root url if user is not activated" do
+  #   log_in_as(@inactivated)
+  #   get users_path
+  #   assert_not is_logged_in?
+  # end
 end
