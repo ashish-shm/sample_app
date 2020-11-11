@@ -15,10 +15,6 @@ archer:
   activated: true
   activated_at: <%= Time.zone.now %>
 
-inactive: 
-  name: Hola
-  email: hess@example.gov
-  password_digest: <%= User.digest('password') %>
 
 
 <% 30.times do |n| %>
